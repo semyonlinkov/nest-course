@@ -8,6 +8,9 @@ import { RolesModule } from 'src/roles/roles.module';
     providers: [UsersService],
     imports: [
         RolesModule
+    ],
+    exports: [
+        UsersService
     ]
 })
 export class UsersModule { }
